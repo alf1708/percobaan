@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cepat Hitung & Tebak!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cepat Hitung & Tebak!</h1>
+        <p class="description">Selamat Datang di Game Hitung Cepat!</p>
+
+        <div id="login-section">
+            <h2>Login untuk Bermain</h2>
+            <input type="password" id="passwordInput" placeholder="MASUKAN PASSWORD">
+            <button id="loginButton" class="btn primary-btn">Login</button>
+            <p id="loginMessage" class="message"></p>
+        </div>
+
+        <div id="game-section" class="hidden">
+            <div class="game-info">
+                <div class="info-item">
+                    <span class="label">Skor:</span>
+                    <span id="score" class="value">0</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Waktu:</span>
+                    <span id="timer" class="value">30</span>
+                </div>
+            </div>
+
+            <div class="question-area">
+                <p id="question" class="question-text"></p>
+                <input type="number" id="answerInput" placeholder="Jawab di sini..." autofocus>
+                <button id="submitAnswer">Jawab!</button>
+            </div>
+
+            <p id="message" class="message"></p>
+
+            <button id="startButton" class="btn primary-btn">Mulai Game!</button>
+            <button id="restartButton" class="btn secondary-btn hidden">Main Lagi</button>
+            <button id="logoutButton" class="btn secondary-btn">Logout</button>
+
+        </div>
+        <p>@copyright alif aditya</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
